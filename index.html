@@ -171,6 +171,7 @@
       border: none;
       border-radius: 12px;
       padding: 14px 24px;
+      min-height: 48px;
       font-size: 15px;
       font-weight: 700;
       font-family: inherit;
@@ -193,8 +194,10 @@
     .machines {
       display: flex;
       gap: 32px;
-      margin-top: 64px;
+      margin-top: 48px;
       align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     .machine-item {
       display: flex;
@@ -230,7 +233,7 @@
 
     /* ─── FEATURES ─── */
     .features {
-      padding: 120px 24px;
+      padding: 64px 24px 100px;
       max-width: 1100px;
       margin: 0 auto;
     }
@@ -261,13 +264,13 @@
 
     .feature-card {
       background: var(--surface);
-      border: 1px solid var(--surface-3);
+      border: 1px solid rgba(255,255,255,0.08);
       border-radius: 20px;
       padding: 32px;
       transition: border-color 0.2s, transform 0.2s;
     }
     .feature-card:hover {
-      border-color: rgba(0,212,255,0.2);
+      border-color: rgba(0,212,255,0.25);
       transform: translateY(-2px);
     }
 
@@ -314,7 +317,8 @@
     .step-number {
       font-size: 48px;
       font-weight: 800;
-      color: var(--surface-3);
+      color: rgba(0, 212, 255, 0.25);
+      text-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
       line-height: 1;
       margin-bottom: 16px;
     }
@@ -465,7 +469,7 @@
     </div>
     <div class="feature-card">
       <div class="feature-icon">🔵</div>
-      <h3>Works with any FTMS machine</h3>
+      <h3 class="accent-rower">Works with any FTMS machine</h3>
       <p>Connects via Bluetooth to any gym equipment using the FTMS standard — bikes, treadmills, rowers, ellipticals.</p>
     </div>
     <div class="feature-card">
